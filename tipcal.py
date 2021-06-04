@@ -22,6 +22,29 @@ class TipCalculator():
         bill_amount_entry = Entry(window, textvariable = self.meal_cost, width = 14)
         bill_amount_entry.grid(column = 2, row = 0)
 
+        five_percent_tip = Radiobutton(window, text = " 5% ", variable = self.tip_percent, value = 5)
+        five_percent_tip.grid(column = 0, row = 1 )
+
+        ten_percent_tip = Radiobutton(window, text = "10%", variable = self.tip_percent, value = 10)
+        ten_percent_tip.grid(column = 0, row = 2 )
+
+        fifteen_percent_tip = Radiobutton(window, text = "15%", variable = self.tip_percent, value = 15)
+        fifteen_percent_tip.grid(column = 0, row = 3 )
+
+        twenty_percent_tip = Radiobutton(window, text = "20%", variable = self.tip_percent, value = 10)
+        twenty_percent_tip.grid(column = 0, row = 4 )
+
+        twentyfive_percent_tip = Radiobutton(window, text = "25%", variable = self.tip_percent, value = 25)
+        twentyfive_percent_tip.grid(column = 0, row = 5 )
+
+        thirty_percent_tip = Radiobutton(window, text = "30%", variable = self.tip_percent, value = 30)
+        thirty_percent_tip.grid(column = 0, row = 6 )
+
+
+
+
+
+
         window.mainloop()
 
 TipCalculator()
