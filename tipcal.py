@@ -41,13 +41,13 @@ class TipCalculator():
         # create tip amount label and entry function
         tip_ammount_lbl = Label(window, text = "Tip Amount", bg = "brown", fg = "white")
         tip_ammount_lbl.grid(column = 1, row = 3, padx = 15)
-        tip_amount_entry = Entry(window, textvariable = self.tip, width = 14)
+        tip_amount_entry = Label(window, textvariable = self.tip, width = 14)
         tip_amount_entry.grid (column = 2, row = 3)
 
         #create bill total label and entry function
         bill_total_lbl = Label(window, text = "Bill Total", bg = "blue", fg = "white")
         bill_total_lbl.grid(column = 1, row = 5, padx = 15)
-        bill_total_entry = Entry(window, textvariable = self.total_cost, width = 14)
+        bill_total_entry = Label(window, textvariable = self.total_cost, width = 14)
         bill_total_entry.grid (column = 2, row = 5)
 
         # create calculate button
